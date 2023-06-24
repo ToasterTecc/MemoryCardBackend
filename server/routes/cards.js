@@ -97,7 +97,6 @@ cardsRouter.route('/categories/:categoryID/').get((req, res) => {
 
     if (categoryID >= 0 && categoryID < data.categories.length) {
         const category = data.categories[categoryID];
-        count++;
         const newFlashcard = {
             id: category.flashcards.length,
             question,
